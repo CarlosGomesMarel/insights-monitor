@@ -1,0 +1,14 @@
+@import "@/colors.scss";
+
+.bug-entry-form {
+  max-width: 800px;
+  margin: 1rem;
+
+  .userstory-select {
+    min-height: 200px;
+  }
+}
+
+.vs__dropdown-menu {
+  width: 50rem !important; // TODO: Reduce on smaller screens
+}

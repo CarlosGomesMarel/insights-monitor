@@ -1,0 +1,40 @@
+export default [
+  {
+    field: "name",
+    key: "n",
+    title: "Name",
+    align: "left",
+    sortBy: "asc",
+    width: "30rem",
+  },
+  {
+    field: "timestampStr",
+    key: "t",
+    title: "Timestamp",
+    align: "left",
+    sortBy: "desc",
+    width: "13rem",
+  },
+  {
+    field: "message",
+    key: "m",
+    title: "Message",
+    align: "left",
+    sortBy: "asc",
+  },
+  {
+    field: "additionalMessage",
+    key: "a",
+    title: "Extra",
+    align: "left",
+    sortBy: "asc",
+  },
+  {
+    field: "cloudRoleName",
+    key: "r",
+    title: "Role",
+    align: "left",
+    sortBy: "asc",
+    width: "20rem",
+  },
+];

@@ -1,0 +1,97 @@
+@import "@/colors.scss";
+
+.investigations-grid {
+  word-break: break-all;
+  text-overflow: ellipsis;
+
+  .el-table-column--selection {
+    .cell {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .el-table__expand-column {
+    .cell {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .expand-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+
+    .label {
+      font-weight: bold;
+    }
+  }
+
+  .fa-spinner {
+    padding-left: 0.25rem;
+  }
+
+  .search-row {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-columns: auto 200px 300px auto auto 1fr;
+    grid-column-gap: 0.5rem;
+
+    .search {
+      width: 20rem;
+      align-self: end;
+    }
+  }
+
+  .timestamp {
+    word-break: break-word;
+  }
+
+  .message-column {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      align-items: center;
+    }
+
+    .message {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      align-items: center;
+    }
+  }
+
+  .has-bug {
+    color: $cyan;
+  }
+
+  .status-new {
+    color: $red;
+  }
+
+  .status-investigated {
+    color: $green;
+  }
+
+  .status-fixed {
+    color: $blue;
+  }
+
+  .status-ignored {
+    color: $gray-dark;
+  }
+
+  .status-service-issue {
+    color: $gray-dark;
+  }
+}

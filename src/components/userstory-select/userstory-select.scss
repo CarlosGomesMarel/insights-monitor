@@ -1,0 +1,24 @@
+@import "@/colors.scss";
+
+.userstory-select {
+  .user-story-option {
+    .id {
+      font-weight: bold;
+    }
+
+    .title {
+      margin-left: 1rem;
+    }
+  }
+
+  .user-story-selected-option {
+    .title {
+      margin-left: 0.5rem;
+      font-size: x-small;
+    }
+  }
+}
+
+.vs__dropdown-menu {
+  width: 50rem !important; // TODO: Reduce on smaller screens
+}

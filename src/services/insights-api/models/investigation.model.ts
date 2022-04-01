@@ -1,0 +1,59 @@
+export interface InvestigationDto {
+  id: number;
+  telemetryId: number;
+  hashCode: number;
+  issueCount: number;
+  statusId: number;
+  bugId: number;
+  bugUrl: string;
+  bugStatus: string;
+  notes: string;
+  changedTimestamp: Date;
+  timestamp: Date;
+  title: string;
+  name: string;
+  message: string;
+  status: string;
+  additionalMessage: string;
+  cloudRoleName: string;
+  operationName: string;
+  method: string;
+  area: string;
+  appName: string;
+  siteId: string;
+  context: string;
+  uploadedTimestamp: Date;
+  itemId: string;
+  jsonData: object;
+  query: string;
+}
+
+export const DefaultInvestigationDto: InvestigationDto = {
+  id: 0,
+  telemetryId: 0,
+  hashCode: 0,
+  issueCount: 0,
+  statusId: 0,
+  bugId: 0,
+  bugUrl: "",
+  bugStatus: "",
+  notes: "",
+  changedTimestamp: undefined,
+  timestamp: undefined,
+  title: "",
+  name: "",
+  message: "",
+  status: "",
+  additionalMessage: "",
+  cloudRoleName: "",
+  operationName: "",
+  method: "",
+  appName: "",
+  area: "",
+  siteId: "",
+  context: "",
+  uploadedTimestamp: undefined,
+  itemId: "",
+  jsonData: undefined,
+  query: "",
+};

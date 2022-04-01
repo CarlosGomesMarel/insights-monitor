@@ -1,0 +1,58 @@
+@import "@/colors.scss";
+
+.edit-text-form {
+  margin: 1rem;
+
+  form {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+
+    .fieldset {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: 10rem minmax(25rem, auto);
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      align-items: center;
+
+      legend {
+        font-size: 1.2rem;
+        color: $blue-highlight-color;
+        padding-bottom: 0;
+        margin-bottom: -0.5rem;
+        grid-column: 1/-1;
+      }
+
+      label {
+        color: darkgray;
+        font-weight: normal;
+        justify-self: left;
+      }
+    }
+
+    .worklogs-titles {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 0.5rem;
+      justify-content: left;
+    }
+
+    .description {
+      border: 1px solid red;
+      max-height: 15rem;
+      display: block;
+    }
+
+    .error {
+      color: red;
+      font-size: small;
+      font-weight: bold;
+      margin-top: -1rem;
+    }
+  }
+}
+
+.vs__dropdown-menu {
+  width: 50rem !important; // TODO: Reduce on smaller screens
+}

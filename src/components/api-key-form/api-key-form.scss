@@ -1,0 +1,46 @@
+@import '@/colors.scss';
+
+.api-key-form {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-row-gap: 0.5rem;
+  align-items: left;
+  justify-items: left;
+  margin: 2rem;
+
+  h5 {
+    margin-top: 1rem;
+    color: gray;
+  }
+
+  span {
+    color: $instructionText;
+  }
+
+  form {
+    margin-top: 2rem;
+    width: 100%;
+
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 5rem auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    align-items: center;
+
+    label {
+      color: $darkGray;
+      font-weight: normal;
+      justify-self: left;
+    }
+
+    .fa-exclamation-triangle {
+      color: red;
+    }
+
+    button {
+      width: 10rem;
+      justify-self: right;
+    }
+  }
+}
