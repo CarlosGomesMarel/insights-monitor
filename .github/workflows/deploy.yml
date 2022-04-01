@@ -13,12 +13,12 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
-  AZURE_WEBAPP_NAME: mc-time # set this to your application's name
+  AZURE_WEBAPP_NAME: md-sb-euw-insights-monitor # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: "dist" # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: "10.x" # set this to the node version to use
+  NODE_VERSION: "16.x" # set this to the node version to use
 
 jobs:
   build-and-deploy:
